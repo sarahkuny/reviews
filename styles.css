@@ -6,6 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: aliceblue;
 }
 
 
@@ -26,4 +27,26 @@ body {
     background: rgb(0, 166, 255);
     margin-left: auto;
     margin-right: auto; 
+}
+
+.review {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s linear;;
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
 }
