@@ -96,6 +96,12 @@ h4 {
     background: transparent;
     border: none;
     color:rgb(0, 166, 255);
+    padding: 1rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: black;
 }
 
 .random-btn {
@@ -107,4 +113,8 @@ h4 {
     text-transform: uppercase;
     font-family: 'poppins';
     padding: 0.25rem 0.5rem;
+}
+
+.random-btn:hover {
+    color: black;
 }
