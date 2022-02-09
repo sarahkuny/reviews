@@ -64,12 +64,15 @@ h4 {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 #job {
     text-align: center;
     font-weight: light;
-    color: rgb(3, 121, 184);
+    color: rgb(48, 173, 240);
+    text-transform: capitalize;
+
 }
 
 #info {
@@ -92,8 +95,10 @@ h4 {
 
 .random-btn {
     color: rgb(0, 166, 255);
-    background: transparent;
-    border: none;
+    background: aliceblue;
+    border: .05rem solid rgb(0, 166, 255);
+    border-radius: .2rem;
+    margin-top: .35rem;
     text-transform: uppercase;
     font-family: 'poppins';
     padding: 0.25rem 0.5rem;
