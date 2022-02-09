@@ -9,16 +9,21 @@ body {
     background-color: aliceblue;
 }
 
+h4 {
+    text-align: center;
+}
 
 
 .container {
-    min-height: 70vh;
+    min-height: 45vh;
     display: grid;
     place-items: center;
+    margin-top: 15%;
 } 
 
 .title {
     text-align: center;
+    
     
 }
 .underline {
@@ -32,7 +37,10 @@ body {
 .review {
     background-color: white;
     padding: 1.5rem 2rem;
-    transition: all 0.3s linear;;
+    transition: all 0.3s linear;
+    border-radius: .25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 40%;
 }
 
 .img-container {
@@ -49,4 +57,23 @@ body {
     display: block;
     object-fit: cover;
     border-radius: 50%;
+}
+
+#author {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#job {
+    text-align: center;
+    font-weight: light;
+    color: rgb(3, 121, 184);
+}
+
+#info {
+    text-align: center;
+    font-weight: lighter;
+    width: 60%;
+    margin: 0 auto;
 }
