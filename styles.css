@@ -41,6 +41,7 @@ h4 {
     border-radius: .25rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 40%;
+    text-align: center;
 }
 
 .img-container {
@@ -76,4 +77,24 @@ h4 {
     font-weight: lighter;
     width: 60%;
     margin: 0 auto;
+}
+
+.prev-btn,
+.next-btn {
+    
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background: transparent;
+    border: none;
+    color:rgb(0, 166, 255);
+}
+
+.random-btn {
+    color: rgb(0, 166, 255);
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'poppins';
+    padding: 0.25rem 0.5rem;
 }
