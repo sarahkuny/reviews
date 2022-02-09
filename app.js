@@ -46,18 +46,42 @@ const nextButton = document.querySelector('.next-btn');
 const randomButton = document.querySelector('.random-btn');
 let index = 0;
 
-function prevReview() {
-    index > 0 ? index-- : index=reviews.length-1;
-    // if (index > 0){
-    //     index--
-    // } else {
-    //     index = reviews.length-1
-    // };
+window.addEventListener('DOMContentLoaded', function(){
+    const item = reviews[index];
+    img.src= item.img;
+    author.innerHTML=item.name;
+    job.innerHTML=item.job;
+    info.innerHTML=item.text;
+})
+
+function showPerson () {
     let review = reviews[index];
+    //replace content of review:
     img.src= review.img;
     author.innerHTML=review.name;
     job.innerHTML=review.job;
     info.innerHTML=review.text;
 }
+function prevReview() {
+    index > 0 ? index-- : index=reviews.length-1;
+    showPerson(index)
+   
+}
 
-prevButton.addEventListener('click', prevReview)
+function nextReview() {
+    index++;
+    if (index > reviews.length-1){
+        index = 0
+    }
+    showPerson(index)
+}
+
+function randomReview() {
+    index = Math.floor(Math.random() * (reviews.length));
+    console.log(index);
+    showPerson(index);
+}
+
+prevButton.addEventListener('click', prevReview);
+nextButton.addEventListener('click', nextReview);
+randomButton.addEventListener('click', randomReview);
